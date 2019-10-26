@@ -20,4 +20,9 @@ export class TodoListService {
   getTodoList() {
     return this.todoList;
   }
+
+  addItem(todoItem: TodoItem) {
+    this.todoList.push(todoItem);
+  }
+
 }
